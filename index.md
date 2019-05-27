@@ -3,7 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 title: GSoC 2019 | Red Hen Lab
 layout: default
-permalink: /index/
+permalink: /index
 ---
 
 Google Summer of Code 2019 | Red Hen Lab 
