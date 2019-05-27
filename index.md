@@ -6,8 +6,9 @@ layout: default
 permalink: /index
 ---
 
-Google Summer of Code 2019 | Red Hen Lab 
-
+<h1> 
+    Google Summer of Code 2019 | Red Hen Lab 
+</h1>
 Mentor: Robert Ochshorn, CTO, Reduct Inc.
 
 Student Developer: Shreya, MS in Computer Science at University of Texas at Dallas (2020)
