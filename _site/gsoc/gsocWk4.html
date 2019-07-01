@@ -50,32 +50,33 @@
   <li>
     <p>Decoding steps:</p>
 
-    <p>compute-mfcc
-          ./src/featbin/compute-mfcc-feats –config=voxforge_ru/conf/mfcc.conf scp,p: data/wav.scp ark,scp: data/feats.ark,data/feats.scp</p>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  compute-mfcc
+  ./src/featbin/compute-mfcc-feats --config=voxforge_ru/conf/mfcc.conf scp,p: data/wav.scp ark,scp: data/feats.ark,data/feats.scp
+    
+  compute-cmvn
+  ./src/featbin/compute-cmvn-stats --spk2utt=ark:data/spk2utt scp:data/feats.scp ark,scp:data/cmvn.ark,data/cmvn.scp
 
-    <p>compute-cmvn
-          ./src/featbin/compute-cmvn-stats –spk2utt=ark:data/spk2utt scp:data/feats.scp ark,scp:data/cmvn.ark,data/cmvn.scp</p>
-
-    <p>gmm-latgen-faster
-          gmm-latgen-faster$thread_string –max-active=$max_active –beam=$beam –lattice-beam=$lattice_beam –acoustic-scale=$acwt 
-          –allow-partial=true –word-symbol-table=$graphdir/words.txt $decode_extra_opts $model $graphdir/HCLG.fst “$feats” “ark:|gzip -c &gt; 
-          $dir/lat.JOB.gz” “ark,t:$dir/words.JOB” “ark,t:$dir/alignments.JOB” || exit 1;</p>
+  gmm-latgen-faster
+  gmm-latgen-faster$thread_string --max-active=$max_active --beam=$beam --lattice-beam=$lattice_beam --acoustic-scale=$acwt 
+  --allow-partial=true --word-symbol-table=$graphdir/words.txt $decode_extra_opts $model $graphdir/HCLG.fst "$feats" "ark:|gzip -c &gt; 
+  $dir/lat.JOB.gz" "ark,t:$dir/words.JOB" "ark,t:$dir/alignments.JOB" || exit 1;
+</code></pre></div>    </div>
   </li>
   <li>
     <p>Alignment generation:</p>
 
-    <p>Phoneme Alignment:
-          ./src/bin/ali-to-phones –ctm-output exp/tri2a/final.mdl ark: exp/tri2a/decode/alignments.1 1.ctm</p>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  Phoneme Alignment:
+  ./src/bin/ali-to-phones --ctm-output exp/tri2a/final.mdl ark: exp/tri2a/decode/alignments.1 1.ctm
 
-    <p>Word-level Alignment:</p>
-
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      ./steps/get_ctm.sh ./transcript ./data/lang ./exp/tri2a/decode/
+  Word-level Alignment:
+  ./steps/get_ctm.sh ./transcript ./data/lang ./exp/tri2a/decode/
 </code></pre></div>    </div>
   </li>
   <li>
     <p>Preparing data for visualization:</p>
 
-    <p><a href="https://github.com/shreya2111/gentle-labs/tree/master/v1/scripts">link to code for converting to json format</a></p>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  [link to code for converting to json format](https://github.com/shreya2111/gentle-labs/tree/master/v1/scripts)
+</code></pre></div>    </div>
   </li>
   <li>
     <p>Next: Building a Russian language model - Reverse engineering HCLG.fst <a href="https://shreya2111.github.io/gsoc/gsocWk5">Week 5</a></p>
