@@ -51,24 +51,26 @@
     <p>Decoding steps:</p>
 
     <p>compute-mfcc
-      ./src/featbin/compute-mfcc-feats –config=voxforge_ru/conf/mfcc.conf scp,p: data/wav.scp ark,scp: data/feats.ark,data/feats.scp</p>
+          ./src/featbin/compute-mfcc-feats –config=voxforge_ru/conf/mfcc.conf scp,p: data/wav.scp ark,scp: data/feats.ark,data/feats.scp</p>
 
     <p>compute-cmvn
-      ./src/featbin/compute-cmvn-stats –spk2utt=ark:data/spk2utt scp:data/feats.scp ark,scp:data/cmvn.ark,data/cmvn.scp</p>
+          ./src/featbin/compute-cmvn-stats –spk2utt=ark:data/spk2utt scp:data/feats.scp ark,scp:data/cmvn.ark,data/cmvn.scp</p>
 
     <p>gmm-latgen-faster
-      gmm-latgen-faster$thread_string –max-active=$max_active –beam=$beam –lattice-beam=$lattice_beam –acoustic-scale=$acwt 
-      –allow-partial=true –word-symbol-table=$graphdir/words.txt $decode_extra_opts $model $graphdir/HCLG.fst “$feats” “ark:|gzip -c &gt; 
-      $dir/lat.JOB.gz” “ark,t:$dir/words.JOB” “ark,t:$dir/alignments.JOB” || exit 1;</p>
+          gmm-latgen-faster$thread_string –max-active=$max_active –beam=$beam –lattice-beam=$lattice_beam –acoustic-scale=$acwt 
+          –allow-partial=true –word-symbol-table=$graphdir/words.txt $decode_extra_opts $model $graphdir/HCLG.fst “$feats” “ark:|gzip -c &gt; 
+          $dir/lat.JOB.gz” “ark,t:$dir/words.JOB” “ark,t:$dir/alignments.JOB” || exit 1;</p>
   </li>
   <li>
     <p>Alignment generation:</p>
 
     <p>Phoneme Alignment:
-      ./src/bin/ali-to-phones –ctm-output exp/tri2a/final.mdl ark: exp/tri2a/decode/alignments.1 1.ctm</p>
+          ./src/bin/ali-to-phones –ctm-output exp/tri2a/final.mdl ark: exp/tri2a/decode/alignments.1 1.ctm</p>
 
-    <p>Word-level Alignment:
-      ./steps/get_ctm.sh ./transcript ./data/lang ./exp/tri2a/decode/</p>
+    <p>Word-level Alignment:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      ./steps/get_ctm.sh ./transcript ./data/lang ./exp/tri2a/decode/
+</code></pre></div>    </div>
   </li>
   <li>
     <p>Preparing data for visualization:</p>
