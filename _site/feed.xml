@@ -1,4 +1,142 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-05-27T15:14:41-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">GSoC 2019 | Red Hen Lab</title><subtitle>Google Summer of Code 2019 | Red Hen Lab | Robert Ochshorn</subtitle><entry><title type="html">GSoC 2019 - Extending Gentle Aligner</title><link href="http://localhost:4000/gsoc" rel="alternate" type="text/html" title="GSoC 2019 - Extending Gentle Aligner" /><published>2019-05-26T00:00:00-07:00</published><updated>2019-05-26T00:00:00-07:00</updated><id>http://localhost:4000/GSoC-1</id><content type="html" xml:base="http://localhost:4000/gsoc">&lt;p&gt;&lt;img src=&quot;/icons/GSoC.png&quot; alt=&quot;GSoC&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-07-01T12:44:53-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">GSoC 2019 | Red Hen Lab</title><subtitle>Google Summer of Code 2019 | Red Hen Lab | Robert Ochshorn | Shreya</subtitle><entry><title type="html">GSoC 2019 - Extending Gentle Aligner</title><link href="http://localhost:4000/gsocWk4" rel="alternate" type="text/html" title="GSoC 2019 - Extending Gentle Aligner" /><published>2019-06-30T00:00:00-07:00</published><updated>2019-06-30T00:00:00-07:00</updated><id>http://localhost:4000/GSoC-5</id><content type="html" xml:base="http://localhost:4000/gsocWk4">&lt;p&gt;&lt;img src=&quot;/icons/GSoC.png&quot; alt=&quot;GSoC&quot; /&gt;&lt;/p&gt;
+
+&lt;h1&gt; Extending Gentle Aligner &lt;/h1&gt;
+&lt;h2&gt; Week 4 &lt;/h2&gt;
+&lt;h4&gt; Automate Decoding  &lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Data preparation,&lt;/li&gt;
+  &lt;li&gt;Decoding steps,&lt;/li&gt;
+  &lt;li&gt;Alignment generation,&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Preparing data for visualization&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Next: Building a Russian language model - Reverse engineering HCLG.fst &lt;a href=&quot;https://shreya2111.github.io/gsocWk5&quot;&gt;Week 5&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Tools:
+Kaldi, Python libraries, C++&lt;/p&gt;
+
+&lt;p&gt;Link to &lt;a href=&quot;https://github.com/shreya2111/Gentle-Aligner-Extension&quot;&gt;GSoC Project Repository&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="GSoC" /><category term="GSoC" /><category term="ASR" /><category term="Forced-Alignment" /><summary type="html"></summary></entry><entry><title type="html">GSoC 2019 - Extending Gentle Aligner</title><link href="http://localhost:4000/gsocWk3" rel="alternate" type="text/html" title="GSoC 2019 - Extending Gentle Aligner" /><published>2019-06-17T00:00:00-07:00</published><updated>2019-06-17T00:00:00-07:00</updated><id>http://localhost:4000/GSoC-4</id><content type="html" xml:base="http://localhost:4000/gsocWk3">&lt;p&gt;&lt;img src=&quot;/icons/GSoC.png&quot; alt=&quot;GSoC&quot; /&gt;&lt;/p&gt;
+
+&lt;h1&gt; Extending Gentle Aligner &lt;/h1&gt;
+&lt;h2&gt; Week 3 &lt;/h2&gt;
+&lt;h4&gt; Visualization using Javascript  &lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Step 1: Data preparation, Kaldi format to JSON, 
+  Generating JSON scripts for word and phoneme alignment files&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Creating a react app and hosting on github pages&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Visualization of generated alignments using javascript&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;Visualization&quot; style=&quot;background-color: gray&quot;&gt;
+  &lt;iframe width=&quot;100%&quot; height=&quot;500px&quot; src=&quot;assets/build/index.html&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;true&quot;&gt; &lt;/iframe&gt;
+&lt;/figure&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Next: Automating Decoding Process &lt;a href=&quot;https://shreya2111.github.io/gsocWk4&quot;&gt;Week 4&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Tools:
+Kaldi, Python libraries, C++&lt;/p&gt;
+
+&lt;p&gt;Link to &lt;a href=&quot;https://github.com/shreya2111/Gentle-Aligner-Extension&quot;&gt;GSoC Project Repository&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="GSoC" /><category term="GSoC" /><category term="ASR" /><category term="Forced-Alignment" /><summary type="html"></summary></entry><entry><title type="html">GSoC 2019 - Extending Gentle Aligner</title><link href="http://localhost:4000/gsocWk1" rel="alternate" type="text/html" title="GSoC 2019 - Extending Gentle Aligner" /><published>2019-05-31T00:00:00-07:00</published><updated>2019-05-31T00:00:00-07:00</updated><id>http://localhost:4000/GSoC-2</id><content type="html" xml:base="http://localhost:4000/gsocWk1">&lt;p&gt;&lt;img src=&quot;/icons/GSoC.png&quot; alt=&quot;GSoC&quot; /&gt;&lt;/p&gt;
+
+&lt;h1&gt; Extending Gentle Aligner &lt;/h1&gt;
+&lt;h2&gt; Week 1 Progress &lt;/h2&gt;
+&lt;h4&gt; Generating HCLG.fst and Acoustic model from Voxforge_ru (Russian ASR model) recipe &lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Setting up Case HPC account, tried installing Kaldi on case cluster. Switched to AWS computing cluster ec2 to enable quick development.&lt;/li&gt;
+  &lt;li&gt;Installed Kaldi on AWS cluster, downloaded voxforge_ru recipe on the cluster and executed the recipe.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Week 1 Task: Running &lt;a href=&quot;https://github.com/grib0ed0v/kaldi-for-russian&quot;&gt;voxforge_ru recipe&lt;/a&gt;, generating ASR model. Figuring out how to extract timing information from the generated model.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;In order to install Kaldi, all dependencies must be satisfied. I faced an issue with MKL installation. It existed but it’s path was not known to /.configure in ‘src’ directory of Kaldi files.&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;Use ‘whereis MKL’ to find the right path of the library Or look into bin/lib Or home/../intel/compilers_and../../mkl&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Another library ‘srilm’ required for running the russian recipe successfullly needed to be downloaded manually.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;On running run.sh, feats.scp was not created and model was also not generated.&lt;/p&gt;
+
+    &lt;p&gt;ERROR: FstHeader::Read: Bad FST header: standard input&lt;/p&gt;
+
+    &lt;p&gt;In case, you are facing the same error, copy arpa2fst from src/lmbin to /usr/bin manually.
+  &lt;a href=&quot;https://github.com/grib0ed0v/kaldi-for-russian/issues/1&quot;&gt;error thread&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;These steps generated the model and the decoded graph in exp/mono or exp/tri&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Next task is to figure out how to extract timing information from the graph stored in exp/tri i.e. final.mdl 
+&lt;a href=&quot;https://shreya2111.github.io/gsocWk2&quot;&gt;week 2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Tools:
+Kaldi, Python libraries, C++&lt;/p&gt;
+
+&lt;p&gt;Link to &lt;a href=&quot;https://github.com/shreya2111/Gentle-Aligner-Extension&quot;&gt;GSoC Project Repository&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="GSoC" /><category term="GSoC" /><category term="ASR" /><category term="Forced-Alignment" /><summary type="html"></summary></entry><entry><title type="html">GSoC 2019 - Extending Gentle Aligner</title><link href="http://localhost:4000/gsocWk2" rel="alternate" type="text/html" title="GSoC 2019 - Extending Gentle Aligner" /><published>2019-05-31T00:00:00-07:00</published><updated>2019-05-31T00:00:00-07:00</updated><id>http://localhost:4000/GSoC-3</id><content type="html" xml:base="http://localhost:4000/gsocWk2">&lt;p&gt;&lt;img src=&quot;/icons/GSoC.png&quot; alt=&quot;GSoC&quot; /&gt;&lt;/p&gt;
+
+&lt;h1&gt; Extending Gentle Aligner &lt;/h1&gt;
+&lt;h2&gt; Week 2 &lt;/h2&gt;
+&lt;h4&gt; Decoding &amp;amp; Word-Phoneme Alignment using voxforge_ru Russian ASR model  &lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Preparing Kaldi input files: wav.scp, utt2spk, spk2utt.&lt;/p&gt;
+
+    &lt;p&gt;wav.scp: utterance /path_to_wav_files
+  utt2spk: utterance speaker
+  spk2utt: [creating this file manually casuses issues later]&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  Use: utils/utt2spk.pl /path_to _wav.scp_and_utt2spk 
+  eg:  ./utt2spk_to_spk2utt.pl data/ 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Decoding using steps/decode.sh script:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  $cmd --num-threads $num_threads JOB=1:$nj $dir/log/decode.JOB.log \
+  gmm-latgen-faster$thread_string --max-active=$max_active --beam=$beam --lattice-beam=$lattice_beam \
+  --acoustic-scale=$acwt --allow-partial=true --word-symbol-table=$graphdir/words.txt $decode_extra_opts \
+  $model $graphdir/HCLG.fst &quot;$feats&quot; &quot;ark:|gzip -c &amp;gt; $dir/lat.JOB.gz&quot; &quot;ark,t:$dir/words.JOB&quot; &quot;ark,t:$dir/alignments.JOB&quot; || exit 1;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;On getting the transcripts - time aligning them to words and phonemes&lt;/p&gt;
+
+    &lt;p&gt;Phoneme Alignement:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  ./ali-to-phones --ctm-output ../../egs/recipes/voxforge_ru/exp/tri2a/final.mdl ark:../../egs/recipes/voxforge_ru/exp/tri2a/manual_transcript_decode/alignments.1 1.ctm
+  .py script to map integers to phonetic symbols.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;Word Alignment:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  ./steps/get_ctm.sh ./transcript ./data/lang ./exp/tri2a/manual_transcript_decode/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Next step: To visualize the time-aligned transcript data. &lt;a href=&quot;https://shreya2111.github.io/gsocWk3&quot;&gt;Week 3&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Tools:
+Kaldi, Python libraries, C++&lt;/p&gt;
+
+&lt;p&gt;Link to &lt;a href=&quot;https://github.com/shreya2111/Gentle-Aligner-Extension&quot;&gt;GSoC Project Repository&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="GSoC" /><category term="GSoC" /><category term="ASR" /><category term="Forced-Alignment" /><summary type="html"></summary></entry><entry><title type="html">GSoC 2019 - Extending Gentle Aligner</title><link href="http://localhost:4000/gsoc" rel="alternate" type="text/html" title="GSoC 2019 - Extending Gentle Aligner" /><published>2019-05-26T00:00:00-07:00</published><updated>2019-05-26T00:00:00-07:00</updated><id>http://localhost:4000/GSoC-1</id><content type="html" xml:base="http://localhost:4000/gsoc">&lt;p&gt;&lt;img src=&quot;/icons/GSoC.png&quot; alt=&quot;GSoC&quot; /&gt;&lt;/p&gt;
 
 &lt;h1&gt; Extending Gentle Aligner &lt;/h1&gt;
 &lt;p&gt;Project aims to extend the existing Gentle Aligner to different langauges. This project involves integrating different language models in Gentle Aligner Tool.&lt;/p&gt;
@@ -15,11 +153,24 @@
 &lt;/ol&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Week 1: Running voxforge_ru recipe, generating ASR model. Figuring out how to extarct timing information from the generated model.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Week 1: Running voxforge_ru recipe, generating ASR model. Figuring out how to extract timing information from the generated model.
+&lt;a href=&quot;https://shreya2111.github.io/gsocWk1&quot;&gt;Week 1&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Week 2: Decoding &amp;amp; Word-Phoneme Alignment using voxforge_ru ASR model
+&lt;a href=&quot;https://shreya2111.github.io/gsocWk2&quot;&gt;Week 2&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Week 3: Word &amp;amp; Phoneme Alignment Visualization
+&lt;a href=&quot;https://shreya2111.github.io/gsocWk3&quot;&gt;week 3&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Week 4: Automating Decoding 
+&lt;a href=&quot;https://shreya2111.github.io/gsocWk4&quot;&gt;week 4&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Tools:&lt;/p&gt;
-
-&lt;p&gt;Kaldi, Python libraries, C++&lt;/p&gt;
+&lt;p&gt;Tools: Kaldi, Python libraries, C++&lt;/p&gt;
 
 &lt;p&gt;Link to &lt;a href=&quot;https://github.com/shreya2111/Gentle-Aligner-Extension&quot;&gt;GSoC Project Repository&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="GSoC" /><category term="GSoC" /><category term="ASR" /><category term="Forced-Alignment" /><summary type="html"></summary></entry></feed>
