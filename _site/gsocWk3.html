@@ -41,12 +41,45 @@
 <h4> Visualization using Javascript  </h4>
 
 <ul>
+  <li>Step 1: Data preparation, Kaldi format to JSON, 
+  Generating JSON scripts for word and phoneme alignment files</li>
+</ul>
+
+<p>timed_decoding/
+        - index.html</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    -data/    
+        - wav/
+            * [sample_name].wav
+            * …
+        - json/
+            * meta.json 
+                    #Should contain an object with the following mapping:
+                    {sample_name: &lt;str&gt;,
+                        ground_truth: &lt;transcript string&gt;}, …}
+            * [sample_name].words.json
+                    [{text: &lt;str&gt;,
+                      start_time: &lt;float&gt;,
+                      end_time: &lt;float&gt; }, …]
+            * [sample_name].phonemes.json
+                    [{text: &lt;str&gt;,
+                      start_time: &lt;float&gt;,
+                      end_time: &lt;float&gt; }, …]
+</code></pre></div></div>
+
+<ul>
   <li>
-    <p>Step 1: Data preparation, Kaldi format to JSON, 
-  Generating JSON scripts for word and phoneme alignment files</p>
+    <p>Step 2: Creating a react app</p>
+
+    <p><a href="https://github.com/shreya2111/gentle-labs/tree/master/timing-viz">Follow instruction here to get a react app</a></p>
   </li>
   <li>
-    <p>Creating a react app and hosting on github pages</p>
+    <p>Step 3: Deploying the react app on jekyll blog</p>
+
+    <p>’’’
+  yarn run build
+  cp -r build blog-path/assets/
+  ‘’’</p>
   </li>
   <li>
     <p>Visualization of generated alignments using javascript</p>

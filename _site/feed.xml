@@ -1,17 +1,47 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-07-01T12:44:53-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">GSoC 2019 | Red Hen Lab</title><subtitle>Google Summer of Code 2019 | Red Hen Lab | Robert Ochshorn | Shreya</subtitle><entry><title type="html">GSoC 2019 - Extending Gentle Aligner</title><link href="http://localhost:4000/gsocWk4" rel="alternate" type="text/html" title="GSoC 2019 - Extending Gentle Aligner" /><published>2019-06-30T00:00:00-07:00</published><updated>2019-06-30T00:00:00-07:00</updated><id>http://localhost:4000/GSoC-5</id><content type="html" xml:base="http://localhost:4000/gsocWk4">&lt;p&gt;&lt;img src=&quot;/icons/GSoC.png&quot; alt=&quot;GSoC&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-07-01T13:20:40-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">GSoC 2019 | Red Hen Lab</title><subtitle>Google Summer of Code 2019 | Red Hen Lab | Robert Ochshorn | Shreya</subtitle><entry><title type="html">GSoC 2019 - Extending Gentle Aligner</title><link href="http://localhost:4000/gsocWk4" rel="alternate" type="text/html" title="GSoC 2019 - Extending Gentle Aligner" /><published>2019-06-30T00:00:00-07:00</published><updated>2019-06-30T00:00:00-07:00</updated><id>http://localhost:4000/GSoC-5</id><content type="html" xml:base="http://localhost:4000/gsocWk4">&lt;p&gt;&lt;img src=&quot;/icons/GSoC.png&quot; alt=&quot;GSoC&quot; /&gt;&lt;/p&gt;
 
 &lt;h1&gt; Extending Gentle Aligner &lt;/h1&gt;
 &lt;h2&gt; Week 4 &lt;/h2&gt;
 &lt;h4&gt; Automate Decoding  &lt;/h4&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Data preparation,&lt;/li&gt;
-  &lt;li&gt;Decoding steps,&lt;/li&gt;
-  &lt;li&gt;Alignment generation,&lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Preparing data for visualization&lt;/p&gt;
+    &lt;p&gt;Data preparation:&lt;/p&gt;
+
+    &lt;p&gt;utt2spk, spk2utt and wav.scp are generated using the script ‘decoding.py’
+  &lt;a href=&quot;(https://github.com/shreya2111/gentle-labs/tree/master/v1/scripts)&quot;&gt;Find the code here&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
-  &lt;li&gt;Next: Building a Russian language model - Reverse engineering HCLG.fst &lt;a href=&quot;https://shreya2111.github.io/gsocWk5&quot;&gt;Week 5&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Decoding steps:&lt;/p&gt;
+
+    &lt;p&gt;compute-mfcc
+      ./src/featbin/compute-mfcc-feats –config=voxforge_ru/conf/mfcc.conf scp,p: data/wav.scp ark,scp: data/feats.ark,data/feats.scp&lt;/p&gt;
+
+    &lt;p&gt;compute-cmvn
+      ./src/featbin/compute-cmvn-stats –spk2utt=ark:data/spk2utt scp:data/feats.scp ark,scp:data/cmvn.ark,data/cmvn.scp&lt;/p&gt;
+
+    &lt;p&gt;gmm-latgen-faster
+      gmm-latgen-faster$thread_string –max-active=$max_active –beam=$beam –lattice-beam=$lattice_beam –acoustic-scale=$acwt 
+      –allow-partial=true –word-symbol-table=$graphdir/words.txt $decode_extra_opts $model $graphdir/HCLG.fst “$feats” “ark:|gzip -c &amp;gt; 
+      $dir/lat.JOB.gz” “ark,t:$dir/words.JOB” “ark,t:$dir/alignments.JOB” || exit 1;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Alignment generation:&lt;/p&gt;
+
+    &lt;p&gt;Phoneme Alignment:
+      ./src/bin/ali-to-phones –ctm-output exp/tri2a/final.mdl ark: exp/tri2a/decode/alignments.1 1.ctm&lt;/p&gt;
+
+    &lt;p&gt;Word-level Alignment:
+      ./steps/get_ctm.sh ./transcript ./data/lang ./exp/tri2a/decode/&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Preparing data for visualization:&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;https://github.com/shreya2111/gentle-labs/tree/master/v1/scripts&quot;&gt;link to code for converting to json format&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Next: Building a Russian language model - Reverse engineering HCLG.fst &lt;a href=&quot;https://shreya2111.github.io/gsocWk5&quot;&gt;Week 5&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Tools:
@@ -24,12 +54,45 @@ Kaldi, Python libraries, C++&lt;/p&gt;
 &lt;h4&gt; Visualization using Javascript  &lt;/h4&gt;
 
 &lt;ul&gt;
+  &lt;li&gt;Step 1: Data preparation, Kaldi format to JSON, 
+  Generating JSON scripts for word and phoneme alignment files&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;timed_decoding/
+        - index.html&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    -data/    
+        - wav/
+            * [sample_name].wav
+            * …
+        - json/
+            * meta.json 
+                    #Should contain an object with the following mapping:
+                    {sample_name: &amp;lt;str&amp;gt;,
+                        ground_truth: &amp;lt;transcript string&amp;gt;}, …}
+            * [sample_name].words.json
+                    [{text: &amp;lt;str&amp;gt;,
+                      start_time: &amp;lt;float&amp;gt;,
+                      end_time: &amp;lt;float&amp;gt; }, …]
+            * [sample_name].phonemes.json
+                    [{text: &amp;lt;str&amp;gt;,
+                      start_time: &amp;lt;float&amp;gt;,
+                      end_time: &amp;lt;float&amp;gt; }, …]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
   &lt;li&gt;
-    &lt;p&gt;Step 1: Data preparation, Kaldi format to JSON, 
-  Generating JSON scripts for word and phoneme alignment files&lt;/p&gt;
+    &lt;p&gt;Step 2: Creating a react app&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;https://github.com/shreya2111/gentle-labs/tree/master/timing-viz&quot;&gt;Follow instruction here to get a react app&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Creating a react app and hosting on github pages&lt;/p&gt;
+    &lt;p&gt;Step 3: Deploying the react app on jekyll blog&lt;/p&gt;
+
+    &lt;p&gt;’’’
+  yarn run build
+  cp -r build blog-path/assets/
+  ‘’’&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Visualization of generated alignments using javascript&lt;/p&gt;
