@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-07-01T13:26:17-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">GSoC 2019 | Red Hen Lab</title><subtitle>Google Summer of Code 2019 | Red Hen Lab | Robert Ochshorn | Shreya</subtitle><entry><title type="html">GSoC 2019 - Extending Gentle Aligner</title><link href="http://localhost:4000/gsoc/gsocWk4" rel="alternate" type="text/html" title="GSoC 2019 - Extending Gentle Aligner" /><published>2019-06-30T00:00:00-07:00</published><updated>2019-06-30T00:00:00-07:00</updated><id>http://localhost:4000/gsoc/GSoC-5</id><content type="html" xml:base="http://localhost:4000/gsoc/gsocWk4">&lt;p&gt;&lt;img src=&quot;/icons/GSoC.png&quot; alt=&quot;GSoC&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-07-01T13:30:53-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">GSoC 2019 | Red Hen Lab</title><subtitle>Google Summer of Code 2019 | Red Hen Lab | Robert Ochshorn | Shreya</subtitle><entry><title type="html">GSoC 2019 - Extending Gentle Aligner</title><link href="http://localhost:4000/gsoc/gsocWk4" rel="alternate" type="text/html" title="GSoC 2019 - Extending Gentle Aligner" /><published>2019-06-30T00:00:00-07:00</published><updated>2019-06-30T00:00:00-07:00</updated><id>http://localhost:4000/gsoc/GSoC-5</id><content type="html" xml:base="http://localhost:4000/gsoc/gsocWk4">&lt;p&gt;&lt;img src=&quot;/icons/GSoC.png&quot; alt=&quot;GSoC&quot; /&gt;&lt;/p&gt;
 
 &lt;h1&gt; Extending Gentle Aligner &lt;/h1&gt;
 &lt;h2&gt; Week 4 &lt;/h2&gt;
@@ -89,14 +89,14 @@ Kaldi, Python libraries, C++&lt;/p&gt;
     &lt;p&gt;&lt;a href=&quot;https://github.com/shreya2111/gentle-labs/tree/master/v1/scripts&quot;&gt;link to code for converting to json format&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Next: Building a Russian language model - Reverse engineering HCLG.fst &lt;a href=&quot;https://shreya2111.github.io/gsocWk5&quot;&gt;Week 5&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;Next: Building a Russian language model - Reverse engineering HCLG.fst &lt;a href=&quot;https://shreya2111.github.io/gsocWk6&quot;&gt;Week 6&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Tools:
 Kaldi, Python libraries, C++&lt;/p&gt;
 
-&lt;p&gt;Link to &lt;a href=&quot;https://github.com/shreya2111/Gentle-Aligner-Extension&quot;&gt;GSoC Project Repository&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="GSoC" /><category term="GSoC" /><category term="ASR" /><category term="Forced-Alignment" /><summary type="html"></summary></entry><entry><title type="html">GSoC 2019 - Extending Gentle Aligner</title><link href="http://localhost:4000/gsocWk3" rel="alternate" type="text/html" title="GSoC 2019 - Extending Gentle Aligner" /><published>2019-06-17T00:00:00-07:00</published><updated>2019-06-17T00:00:00-07:00</updated><id>http://localhost:4000/GSoC-4</id><content type="html" xml:base="http://localhost:4000/gsocWk3">&lt;p&gt;&lt;img src=&quot;/icons/GSoC.png&quot; alt=&quot;GSoC&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Link to &lt;a href=&quot;https://github.com/shreya2111/Gentle-Aligner-Extension&quot;&gt;GSoC Project Repository&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="GSoC" /><category term="GSoC" /><category term="ASR" /><category term="Forced-Alignment" /><summary type="html"></summary></entry><entry><title type="html">GSoC 2019 - Extending Gentle Aligner</title><link href="http://localhost:4000/gsoc/gsocWk3" rel="alternate" type="text/html" title="GSoC 2019 - Extending Gentle Aligner" /><published>2019-06-17T00:00:00-07:00</published><updated>2019-06-17T00:00:00-07:00</updated><id>http://localhost:4000/gsoc/GSoC-4</id><content type="html" xml:base="http://localhost:4000/gsoc/gsocWk3">&lt;p&gt;&lt;img src=&quot;/icons/GSoC.png&quot; alt=&quot;GSoC&quot; /&gt;&lt;/p&gt;
 
 &lt;h1&gt; Extending Gentle Aligner &lt;/h1&gt;
 &lt;h2&gt; Week 3 &lt;/h2&gt;
@@ -159,7 +159,7 @@ Kaldi, Python libraries, C++&lt;/p&gt;
 &lt;p&gt;Tools:
 Kaldi, Python libraries, C++&lt;/p&gt;
 
-&lt;p&gt;Link to &lt;a href=&quot;https://github.com/shreya2111/Gentle-Aligner-Extension&quot;&gt;GSoC Project Repository&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="GSoC" /><category term="GSoC" /><category term="ASR" /><category term="Forced-Alignment" /><summary type="html"></summary></entry><entry><title type="html">GSoC 2019 - Extending Gentle Aligner</title><link href="http://localhost:4000/gsocWk1" rel="alternate" type="text/html" title="GSoC 2019 - Extending Gentle Aligner" /><published>2019-05-31T00:00:00-07:00</published><updated>2019-05-31T00:00:00-07:00</updated><id>http://localhost:4000/GSoC-2</id><content type="html" xml:base="http://localhost:4000/gsocWk1">&lt;p&gt;&lt;img src=&quot;/icons/GSoC.png&quot; alt=&quot;GSoC&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Link to &lt;a href=&quot;https://github.com/shreya2111/Gentle-Aligner-Extension&quot;&gt;GSoC Project Repository&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="GSoC" /><category term="GSoC" /><category term="ASR" /><category term="Forced-Alignment" /><summary type="html"></summary></entry><entry><title type="html">GSoC 2019 - Extending Gentle Aligner</title><link href="http://localhost:4000/gsoc/gsocWk1" rel="alternate" type="text/html" title="GSoC 2019 - Extending Gentle Aligner" /><published>2019-05-31T00:00:00-07:00</published><updated>2019-05-31T00:00:00-07:00</updated><id>http://localhost:4000/gsoc/GSoC-2</id><content type="html" xml:base="http://localhost:4000/gsoc/gsocWk1">&lt;p&gt;&lt;img src=&quot;/icons/GSoC.png&quot; alt=&quot;GSoC&quot; /&gt;&lt;/p&gt;
 
 &lt;h1&gt; Extending Gentle Aligner &lt;/h1&gt;
 &lt;h2&gt; Week 1 Progress &lt;/h2&gt;
@@ -193,13 +193,13 @@ Kaldi, Python libraries, C++&lt;/p&gt;
     &lt;p&gt;These steps generated the model and the decoded graph in exp/mono or exp/tri&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;Next task is to figure out how to extract timing information from the graph stored in exp/tri i.e. final.mdl 
-&lt;a href=&quot;https://shreya2111.github.io/gsocWk2&quot;&gt;week 2&lt;/a&gt;&lt;/li&gt;
+&lt;a href=&quot;https://shreya2111.github.io/gsoc/gsocWk2&quot;&gt;week 2&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Tools:
 Kaldi, Python libraries, C++&lt;/p&gt;
 
-&lt;p&gt;Link to &lt;a href=&quot;https://github.com/shreya2111/Gentle-Aligner-Extension&quot;&gt;GSoC Project Repository&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="GSoC" /><category term="GSoC" /><category term="ASR" /><category term="Forced-Alignment" /><summary type="html"></summary></entry><entry><title type="html">GSoC 2019 - Extending Gentle Aligner</title><link href="http://localhost:4000/gsocWk2" rel="alternate" type="text/html" title="GSoC 2019 - Extending Gentle Aligner" /><published>2019-05-31T00:00:00-07:00</published><updated>2019-05-31T00:00:00-07:00</updated><id>http://localhost:4000/GSoC-3</id><content type="html" xml:base="http://localhost:4000/gsocWk2">&lt;p&gt;&lt;img src=&quot;/icons/GSoC.png&quot; alt=&quot;GSoC&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Link to &lt;a href=&quot;https://github.com/shreya2111/Gentle-Aligner-Extension&quot;&gt;GSoC Project Repository&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="GSoC" /><category term="GSoC" /><category term="ASR" /><category term="Forced-Alignment" /><summary type="html"></summary></entry><entry><title type="html">GSoC 2019 - Extending Gentle Aligner</title><link href="http://localhost:4000/gsoc/gsocWk2" rel="alternate" type="text/html" title="GSoC 2019 - Extending Gentle Aligner" /><published>2019-05-31T00:00:00-07:00</published><updated>2019-05-31T00:00:00-07:00</updated><id>http://localhost:4000/gsoc/GSoC-3</id><content type="html" xml:base="http://localhost:4000/gsoc/gsocWk2">&lt;p&gt;&lt;img src=&quot;/icons/GSoC.png&quot; alt=&quot;GSoC&quot; /&gt;&lt;/p&gt;
 
 &lt;h1&gt; Extending Gentle Aligner &lt;/h1&gt;
 &lt;h2&gt; Week 2 &lt;/h2&gt;
@@ -241,7 +241,7 @@ Kaldi, Python libraries, C++&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Next step: To visualize the time-aligned transcript data. &lt;a href=&quot;https://shreya2111.github.io/gsocWk3&quot;&gt;Week 3&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;Next step: To visualize the time-aligned transcript data. &lt;a href=&quot;https://shreya2111.github.io/gsoc/gsocWk3&quot;&gt;Week 3&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -267,19 +267,19 @@ Kaldi, Python libraries, C++&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;
     &lt;p&gt;Week 1: Running voxforge_ru recipe, generating ASR model. Figuring out how to extract timing information from the generated model.
-&lt;a href=&quot;https://shreya2111.github.io/gsocWk1&quot;&gt;Week 1&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&quot;https://shreya2111.github.io/gsoc/gsocWk1&quot;&gt;Week 1&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Week 2: Decoding &amp;amp; Word-Phoneme Alignment using voxforge_ru ASR model
-&lt;a href=&quot;https://shreya2111.github.io/gsocWk2&quot;&gt;Week 2&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&quot;https://shreya2111.github.io/gsoc/gsocWk2&quot;&gt;Week 2&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Week 3: Word &amp;amp; Phoneme Alignment Visualization
-&lt;a href=&quot;https://shreya2111.github.io/gsocWk3&quot;&gt;week 3&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&quot;https://shreya2111.github.io/gsoc/gsocWk3&quot;&gt;week 3&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Week 4: Automating Decoding 
-&lt;a href=&quot;https://shreya2111.github.io/gsocWk4&quot;&gt;week 4&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&quot;https://shreya2111.github.io/gsoc/gsocWk4&quot;&gt;week 4&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
