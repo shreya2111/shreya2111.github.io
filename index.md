@@ -11,9 +11,9 @@ permalink: /index
 </h1>
 Mentor: Robert Ochshorn, CTO, Reduct Inc.
 
-Student Developer: Shreya, MS in Computer Science at University of Texas at Dallas (2020)
+Developer: Shreya, MS in Computer Science at University of Texas at Dallas (Grad 2020)
 
-[Link to blog](https://shreya2111.github.io/gsoc)
+[Link to GSoC blog](https://shreya2111.github.io/gsoc)
 
 <!-- <figure class="Visualization" style="background-color: gray">
   <iframe width="100%" height="300px" src="assets/build/index.html" frameborder="0" allowfullscreen="true"> </iframe>
